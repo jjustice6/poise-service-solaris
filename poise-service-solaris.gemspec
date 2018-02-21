@@ -13,8 +13,8 @@ require 'poise_service/solaris/version'
 Gem::Specification.new do |spec|
   spec.name = 'poise-service-solaris'
   spec.version = PoiseService::Solaris::VERSION
-  spec.authors = ['Shahul Khajamohideen']
-  spec.email = %w(skhajamohid1@bloomberg.net)
+  spec.authors = ['Shahul Khajamohideen', 'Joshua Justice']
+  spec.email = %w(skhajamohid1@bloomberg.net, jjustice6@bloomberg.net)
   spec.description = 'A Solaris provider for poise-service.'
   spec.summary = spec.description
   spec.homepage = 'https://github.com/sh9189/poise-service-solaris'
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'poise-service', '~> 1.0'
 
   spec.add_development_dependency 'poise-boiler', '~> 1.0'
+  spec.metadata = {'platforms' => 'solaris2' }
 end
